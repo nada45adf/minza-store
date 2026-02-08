@@ -28,46 +28,46 @@ const products = [
         images: ["https://i.ibb.co/0V64tdsB/IMG-20251217-083106-930.jpg", "https://i.ibb.co/kVtq7HP2/IMG-20251216-074001-733.jpg"],
     },
     { 
-        id: 1, 
+        id:5, 
         name: "حلق ميزا الذهبي", 
         price: 30, 
-        stock: 5,
-        imgs: ["", ""] 
+        stock: 1,
+        imgs: ["https://i.ibb.co/fdrSvzNC/IMG-20251216-074019-476.jpg", "https://i.ibb.co/ZR6X4295/IMG-20260208-050305-653.jpg"], 
     },
     { 
-        id: 2, 
+        id: 6, 
         name: "خاتم ميزا الوردي", 
-        price: 45, 
-        stock: 5,
-        imgs: ["", ""] 
+        price: 30, 
+        stock: 1,
+        imgs: ["https://i.ibb.co/KzmTsGXk/IMG-20251216-074023-856.jpg", "https://i.ibb.co/j9pprnpG/IMG-20260208-050310-759.jpg"], 
     },
     { 
-        id: 1, 
+        id: 7, 
         name: "حلق ميزا الذهبي", 
         price: 30, 
-        stock: 5,
-        imgs: ["", ""] 
+        stock: 1,
+        imgs: ["https://i.ibb.co/sdh8CDxN/IMG-20251216-074006-235.jpg", "https://i.ibb.co/rfLZVqgg/IMG-20260208-050254-768.jpg"], 
     },
     { 
-        id: 2, 
+        id: 8, 
         name: "خاتم ميزا الوردي", 
-        price: 45, 
-        stock: 5,
-        imgs: ["", ""] 
+        price: 30, 
+        stock: 1,
+        imgs: ["https://i.ibb.co/4nKkXDYr/IMG-20251216-074016-329.jpg", "https://i.ibb.co/ym74qc0C/IMG-20260208-050301-164.jpg"], 
     },
     { 
-        id: 1, 
+        id: 9, 
         name: "حلق ميزا الذهبي", 
         price: 30, 
-        stock: 5,
-        imgs: ["", ""] 
+        stock: 1,
+        imgs: ["https://i.ibb.co/S4XJn9W3/IMG-20251216-074031-772.jpg", "https://i.ibb.co/twrKCqqS/IMG-20260208-050319-283.jpg"], 
     },
     { 
-        id: 2, 
+        id: 10, 
         name: "خاتم ميزا الوردي", 
-        price: 45, 
-        stock: 5,
-        imgs: ["", ""] 
+        price: 30, 
+        stock: 1,
+        imgs: ["https://i.ibb.co/4qL2QKy/IMG-20251216-074027-742.jpg", "https://i.ibb.co/LXNctQ5K/IMG-20260208-050315-228.jpg"], 
     },
     // يمكنك إضافة حتى 100 منتج بنفس الطريقة هنا...
 ];
