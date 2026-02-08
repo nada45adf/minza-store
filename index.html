@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-logo" onclick="showHome()" style="cursor: pointer;">MINZA</h1>
+        
+        <div class="header-icons">
+            <div class="icon-btn" onclick="openFav()">
+                <i class="fa-regular fa-heart"></i>
+                <span id="fav-count">0</span>
+            </div>
+            <div class="icon-btn" onclick="showCheckout()">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="announcement-bar">
+        <span>𝑆𝑡𝑎𝑛𝑑 𝑜𝑢𝑡 𝑤𝑖𝑡ℎ 𝑎 𝑢𝑛𝑖𝑞𝑢𝑒 𝑙𝑜𝑜𝑘 𝑢𝑠𝑖𝑛𝑔 𝑀𝑒𝑛𝑧𝑎 𝑎𝑐𝑐𝑒𝑠𝑠𝑜𝑟𝑖𝑒𝑠</span>
+        <br>
+        <span>تُميّزي بإطُلالة فُريدة بّٱسًتُخٌدُٱم إكسًسًوِٱرٱتُ ميّنٌزٱ</span>
+    </div>
+
+    <main id="home-page">
+        <div id="products-grid" class="products-grid"></div>
+        <div class="footer-note">
+            كل ئيّدُ بّتُخٌلقَ حًكٱيّة وِٱنٌٱ صِنٌعتُ جَمٱل حًكٱيّتُيّ<br>
+            𝐸𝑣𝑒𝑟𝑦 ℎ𝑎𝑛𝑑 𝑡𝑒𝑙𝑙𝑠 𝑎 𝑠𝑡𝑜𝑟𝑦, 𝑎𝑛𝑑 𝐼 𝑎𝑚 𝑡ℎ𝑒 𝑜𝑛𝑒 𝑤ℎ𝑜 𝑐𝑟𝑎𝑓𝑡𝑒𝑑 𝑡ℎ𝑒 𝑏𝑒𝑎𝑢𝑡𝑦 𝑜𝑓 𝑚𝑦 𝑠𝑡𝑜𝑟𝑦
+        </div>
+    </main>
+
+    <section id="favorites-page" class="hidden">
+        <div class="checkout-container">
+            <button class="back-btn" onclick="showHome()">← العودة للمتجر</button>
+            <h2 class="section-title">قائمة مفضلة</h2>
+            <div id="fav-items-list"></div>
+        </div>
+    </section>
+
+    <section id="checkout-page" class="hidden">
+        <div class="checkout-container">
+            <button class="back-btn" onclick="showHome()">← العودة للمتجر</button>
+            <h2 class="section-title">إتمام الطلب</h2>
+            <div id="cart-items-list" class="cart-summary"></div>
+            <div class="checkout-form">
+                <input type="text" id="name" placeholder="الاسم الكامل">
+                <div style="position: relative; display: flex; align-items: center; width: 52%;">
+    <input type="text" id="address" placeholder="المدينة والحي أو رابط الموقع" style="width: 100%; padding-left: 40px;">
+    <i class="fa-solid fa-location-dot" onclick="getLocation()" style="position: absolute; left: 10px; color: #ff4d4d; cursor: pointer; font-size: 18px;"></i>
+</div>
+                <div class="price-row"><span>رسوم الشحن:</span><span>20 ريال</span></div>
+                <div class="price-row total"><span>الإجمالي:</span><span id="final-total">0 ريال</span></div>
+                <div class="payment-methods">
+                    <div class="payment-methods" style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+    <button class="btn-pay cod" onclick="pay('EMAIL')" style="width: 100%; padding: 12px; background: black; color: white; border: none; border-radius: 5px;">
+        الدفع عند الاستلام
+    </button>
+  
+    <button class="btn-pay paypal" onclick="pay('PAYPAL')" style="width: 100%; padding: 12px; background: #5d4037; color: white; border: none; border-radius: 5px;">
+        Paypal
+    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer style="padding: 40px 10px; background-color: #fceeee; border-top: 1px solid #fceeee; margin-top: 50px; position: relative;">
+        
+        <div class="social-links" style="text-align: right; margin-bottom: 2px;">
+            <a href="https://www.tiktok.com/@minz_a3" style="margin-left: 5px; color: #000; font-size: 10px;"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/minz_a3" style="margin-left: 5px; color: #000; font-size: 10px;"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: -2px;">
+            
+            <img src="https://i.ibb.co/ksdyCQCg/image.png" alt="minza" 
+                 style="height: 220px; width: auto; margin-bottom: 2px; display: block;">
+
+            <p style="font-size: 10px; color: #5d4037; margin: 0; font-weight: 500;">
+                © 2025 MINZA. جميع الحقوق محفوظة
+            </p>
+            
+        </div>
+    </footer>
+    
+        <script src="script.js"></script>
+</body>
+</html>
+       
+                  
+
+   

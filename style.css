@@ -1,0 +1,282 @@
+:root { 
+    --pink: #fceeee; /* لون الخلفية الوردي الناعم */
+    --accent: #e0bfbf; /* لون التمييز */
+    --dark: #5d4037; /* لون النصوص الفخم */
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    margin: 0; 
+    direction: rtl; 
+    background: #fceeee; 
+    color: var(--dark); 
+}
+
+.hidden { display: none !important; }
+
+/* الهيدر الأنيق المستوحى من صورتك */
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 25px; 
+    background: white; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100;
+}
+
+.text-logo { 
+    font-size: 24px; 
+    letter-spacing: 4px; 
+    margin: 0; 
+    font-weight: 400; 
+}
+
+.header-icons { display: flex; gap: 20px; }
+.icon-btn { position: relative; font-size: 20px; cursor: pointer; }
+.icon-btn span { 
+    position: absolute; 
+    top: -8px; 
+    right: -10px; 
+    background: var(--accent); 
+    color: white; 
+    font-size: 10px; 
+    padding: 2px 6px; 
+    border-radius: 50%; 
+}
+
+/* عرض المنتجات بشكل مرتب */
+.products-grid {
+    display: grid;
+    /* هذا السطر هو المسؤول عن جعل الصور تظهر بجانب بعضها وتصغر تلقائياً */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; /* المسافة بين المنتجات */
+    padding: 10px;
+}
+
+.card { 
+    border: none; 
+    position: relative; 
+    background: white;
+} 
+/* 1. تصغير حاوية الصور وتثبيت الطول */
+.img-slider {
+    position: relative !important;
+    width: 100% !important;
+    height: 200px !important; /* هذا الرقم يتحكم في قصر الصورة */
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    background-color: #e0bfbf !important;
+}
+/* 2. ضبط الصورة لتملأ المربع الصغير */
+.img-slider img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+/* 3. إجبار ظهور منتجين في كل سطر */
+.products-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 10px !important;
+
+/* أزرار التنقل (الأسهم) */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 50%;
+}
+.prev { right: 5px; }
+.next { left: 5px; }
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+.prev { right: 5px; }
+.next { left: 5px; }
+
+.card:hover img { transform: scale(1.05); }
+/* سطر 200: حاوية الصورة */
+.img-slider {
+    position: relative !important;
+    width: 100% !important;
+    height: 250px !important;
+    overflow: hidden !important;
+    display: block !important;
+    background: #e0bfbf;
+}
+
+/* سطر 210: الصور */
+.img-slider img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: none; 
+}
+
+.img-slider img.active {
+    display: block !important;
+}
+
+/* سطر 220: الأسهم (ضروري للتقليب) */
+.slider-btn {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 99 !important;
+    background: white !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    border: 1px solid #e0bfbf !important;
+}
+.prev { left: 5px !important; }
+.next { right: 5px !important; }
+
+/* سطر 240: السعر (إعادة اللون الأحمر) */
+.card p, .price {
+    color: #e0bfbf !important; 
+    font-weight: bold !important;
+    font-size: 18px !important;
+    text-align: center !important;
+    display: block !important;
+    margin-top: 10px !important;
+}
+/* تنسيق كرت المنتج لمنع التداخل */
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.add-btn:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+/* زر المفضلة (القلب) مثل شي إن */
+.wishlist-btn { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    z-index: 10; 
+    background: rgba(255,255,255,0.7); 
+    border: none; 
+    border-radius: 50%; 
+    width: 32px; 
+    height: 32px; 
+    cursor: pointer; 
+    color: #e0bfbf;
+}
+
+.wishlist-btn.active { color: #ff4d4d; }
+
+.add-btn { 
+    width: 100%; 
+    background: var(--dark); 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* صفحة الدفع */
+.checkout-container { max-width: 450px; margin: auto; padding: 20px; }
+.btn-pay { width: 100%; padding: 15px; border: none; font-weight: bold; cursor: pointer; margin-top: 10px; }
+.cod { background: var(--accent); color: white; }
+.paypal { background: #0070ba; color: white; }
+
+/* كود تصغير الشعار في أسفل الصفحة */
+.footer-logo-small {
+    width: 200px;         /* غيري هذا الرقم (مثلاً 40px أو 60px) حتى يصغر الشعار للحجم الذي تحبينه */
+    height: auto;        /* يحافظ على تناسق الطول مع العرض */
+    display: block;      /* لضمان ظهوره بشكل صحيح */
+    margin: 0px auto;   /* لتوسط الشعار في منتصف الصفحة */
+    object-fit: contain; /* يمنع تمدد الصورة بشكل خاطئ */
+}/* تغيير لون أيقونات مواقع التواصل */
+.social-links a {
+    color: #5d4037 !important; /* اللون البني الذي اخترتِه */
+    font-size: 30px !important;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+/* تأثير عند مرور الماوس على الأيقونة (اختياري) */
+.social-links a:hover {
+    color: #fceeee;        /* تتحول للوردي 
+
+/* 1. النافذة المنبثقة (المفضلة) - النسخة البيضاء */
+.fav-modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-color: #ffffff !important;
+opacity: 1 !important; /* يضمن أن النافذة ليست شفافة */
+visibility: visible !important; /* يضمن أنها مرئية */
+/* لون أبيض صريح */
+    width: 90% !important;
+    max-width: 400px !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3) !important;
+    z-index: 100000 !important; /* رفعها فوق كل شيء */
+    display: none; /* تظهر فقط عند الضغط على القلب */
+}
+/* 2. طبقة التعتيم الخلفية (التي تجعل ما خلف النافذة باهتاً) */
+.modal-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.5) !important; /* تعتيم بنسبة 50% */
+    z-index: 99999 !important; /* أقل من النافذة بواحد */
+    display: none;
+}
+/* 3. أيقونات التواصل الاجتماعي في الأسفل */
+.social-links {
+    position: static !important;
+    margin-top: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    z-index: 1 !important; /* لتبقى في الخلف */
+}
+.social-links a i {
+    font-size: 30px !important;
+    color: #8e7f7f !important;
+}
+/* 4. ضمان ظهور أيقونات المتجر */
+.fa-solid, .fa-regular, .fa-brands {
+    display: inline-block !important;
+    visibility: visible !important; 
+}
