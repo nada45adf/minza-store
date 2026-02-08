@@ -16,7 +16,7 @@ const products = [
     },
      { 
         id: 1, 
-        name: "أقراط دائرية بأوراق خضراء ", 
+        name: "أقراط بأوراق خضراء ", 
         price: 30, 
         stock: 1,
         imgs: ["https://i.ibb.co/4ZRWmNgR/IMG-20251216-074012-134.jpg", "https://i.ibb.co/0V64tdsB/IMG-20251217-083106-930.jpg"] 
