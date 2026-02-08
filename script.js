@@ -23,7 +23,8 @@ const products = [
     },
     { 
         id: 4, 
-        name: " أقراط بتدرج بني واسود", 
+        name: " أقراط شَمس الغُروب 
+مصنوعة يدويًا من البوليمر", 
         price: 30, 
         stock: 1,
         imgs: ["https://i.ibb.co/kVtq7HP2/IMG-20251216-074001-733.jpg", "https://i.ibb.co/pvRq7cyG/IMG-20251216-084912-941.jpg"],
