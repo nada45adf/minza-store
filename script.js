@@ -12,7 +12,7 @@ const products = [
         name: "أقراط بتصميم وردي وبني", 
         price: 30, 
         stock: 0,
-        imgs: ["https://ibb.co/RGnrXn76", "https://ibb.co/B2wTVQXW"] 
+        imgs: ["https://i.ibb.co/kVnbLnMD/IMG-20251215-062629-978.jpg", "https://i.ibb.co/SwJVXMhY/IMG-20251215-062628-290.jpg"] 
     },
      { 
         id: 1, 
