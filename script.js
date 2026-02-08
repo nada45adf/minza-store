@@ -2,29 +2,28 @@
 const products = [
     { 
         id: 1, 
-        name: " أقراط نجمة زرقاء", 
+        name: "أقراط نجمة مرحة", 
       price: 30,
       stock: 1,
         imgs: ["https://i.ibb.co/VYXwbP1X/IMG-20251216-073956-853.jpg","https://i.ibb.co/p6c3G28d/p6c3G28d.jpg"], 
     },
     { 
         id: 2, 
-        name: "أقراط وردي وبني", 
+        name: "أقراط بتلات ناعمة", 
         price: 30, 
         stock: 0,
         imgs: ["https://i.ibb.co/kVnbLnMD/IMG-20251215-062629-978.jpg","https://i.ibb.co/SwJVXMhY/IMG-20251215-062628-290.jpg"],
     },
      { 
         id:3, 
-        name: "أقراط بأوراق خضراء ", 
+        name: "أقراط نَقاء الطبيعة ", 
         price: 30, 
         stock: 1, 
         imgs: ["https://i.ibb.co/4ZRWmNgR/IMG-20251216-074012-134.jpg", "https://i.ibb.co/0V64tdsB/IMG-20251217-083106-930.jpg"],
     },
     { 
         id: 4, 
-        name: " أقراط شَمس الغُروب 
-مصنوعة يدويًا من البوليمر", 
+        name: "أقراط شَمس الغُروب", 
         price: 30, 
         stock: 1,
         imgs: ["https://i.ibb.co/kVtq7HP2/IMG-20251216-074001-733.jpg", "https://i.ibb.co/pvRq7cyG/IMG-20251216-084912-941.jpg"],
