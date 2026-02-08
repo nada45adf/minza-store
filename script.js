@@ -69,7 +69,7 @@ const products = [
         stock: 1,
         imgs: ["https://i.ibb.co/4qL2QKy/IMG-20251216-074027-742.jpg", "https://i.ibb.co/LXNctQ5K/IMG-20260208-050315-228.jpg"], 
     },
-    {
+    
     // يمكنك إضافة حتى 100 منتج بنفس الطريقة هنا...
 ];
 
