@@ -2,17 +2,17 @@
 const products = [
     { 
         id: 1, 
-        name: "حلق ميزا الذهبي", 
+        name: " أقراط نجمة زرقاء", 
       price: 30,
-      stock: 5,
+      stock: 1,
         imgs: ["https://i.ibb.co/VYXwbP1X/IMG-20251216-073956-853.jpg", "https://i.ibb.co/p6c3G28d/p6c3G28d.jpg"] 
     },
     { 
         id: 2, 
-        name: "خاتم ميزا الوردي", 
-        price: 45, 
-        stock: 5,
-        imgs: ["https://i.ibb.co/GfDM27Qd/IMG-20251215-062629-978.jpg", "https://i.ibb.co/VYXwbP1X/IMG-20251216-073956-853.jpg"] 
+        name: "أقراط بتصميم وردي وبني", 
+        price: 30, 
+        stock: 0,
+        imgs: ["https://ibb.co/RGnrXn76", "https://ibb.co/B2wTVQXW"] 
     },
      { 
         id: 1, 
