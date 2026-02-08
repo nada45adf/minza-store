@@ -9,21 +9,21 @@ const products = [
     },
     { 
         id: 2, 
-        name: "أقراط بتصميم وردي وبني", 
+        name: "أقراط وردي وبني", 
         price: 30, 
         stock: 0,
         imgs: ["https://i.ibb.co/kVnbLnMD/IMG-20251215-062629-978.jpg", "https://i.ibb.co/SwJVXMhY/IMG-20251215-062628-290.jpg"] 
     },
      { 
-        id: 1, 
+        id:3, 
         name: "أقراط بأوراق خضراء ", 
         price: 30, 
         stock: 1,
         imgs: ["https://i.ibb.co/4ZRWmNgR/IMG-20251216-074012-134.jpg", "https://i.ibb.co/0V64tdsB/IMG-20251217-083106-930.jpg"] 
     },
     { 
-        id: 2, 
-        name: " أقراط بتدرج لوني بني واسود", 
+        id: 4, 
+        name: " أقراط بتدرج بني واسود", 
         price: 30, 
         stock: 1,
         imgs: ["https://i.ibb.co/kVtq7HP2/IMG-20251216-074001-733.jpg", "https://i.ibb.co/pvRq7cyG/IMG-20251216-084912-941.jpg"] 
