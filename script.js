@@ -85,18 +85,18 @@ const products = [
         imgs: ["https://i.ibb.co/XfC4V6X1/IMG-20260427-075007-451.jpg","https://i.ibb.co/Q3PTTZms/IMG-20260427-075005-073.jpg"],
     },
         { 
-        id: 2, 
-        name: "أقراط بتلات ناعمة", 
+        id: 13, 
+        name: "أقراط عصرية بني", 
         price: 30, 
-        stock: 0,
-        imgs: ["https://i.ibb.co/kVnbLnMD/IMG-20251215-062629-978.jpg","https://i.ibb.co/SwJVXMhY/IMG-20251215-062628-290.jpg"],
+        stock: 1,
+        imgs: ["https://i.ibb.co/FbJwMVkk/IMG-20260427-074943-684.jpg","https://i.ibb.co/HDqjwcfg/IMG-20260427-074940-789.jpg"],
     },
         { 
-        id: 2, 
-        name: "أقراط بتلات ناعمة", 
+        id: 14,
+        name: "أقراط وردية بدوائر", 
         price: 30, 
-        stock: 0,
-        imgs: ["https://i.ibb.co/kVnbLnMD/IMG-20251215-062629-978.jpg","https://i.ibb.co/SwJVXMhY/IMG-20251215-062628-290.jpg"],
+        stock: 1,
+        imgs: ["https://i.ibb.co/VYc2dvGc/IMG-20260427-074949-932.jpg","https://i.ibb.co/TD73XQ2X/IMG-20260427-074952-384.jpg"],
     },
     
     // يمكنك إضافة حتى 100 منتج بنفس الطريقة هنا...
