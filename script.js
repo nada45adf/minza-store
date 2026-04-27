@@ -70,6 +70,34 @@ const products = [
         stock: 1,
         imgs: ["https://i.ibb.co/4qL2QKy/IMG-20251216-074027-742.jpg", "https://i.ibb.co/LXNctQ5K/IMG-20260208-050315-228.jpg"], 
     },
+        { 
+        id: 11, 
+        name: " أقراط ورق خريف", 
+        price: 30,
+        stock:1,
+        imgs: ["https://i.ibb.co/YT7vLg74/IMG-20260427-074937-877.jpg","https://i.ibb.co/HDqjwcfg/IMG-20260427-074940-789.jpg"],
+    },
+        { 
+        id:12,
+        name: " أقراط أحمر بسلاسل وردي", 
+        price: 30, 
+        stock: 1,
+        imgs: ["https://i.ibb.co/XfC4V6X1/IMG-20260427-075007-451.jpg","https://i.ibb.co/Q3PTTZms/IMG-20260427-075005-073.jpg"],
+    },
+        { 
+        id: 2, 
+        name: "أقراط بتلات ناعمة", 
+        price: 30, 
+        stock: 0,
+        imgs: ["https://i.ibb.co/kVnbLnMD/IMG-20251215-062629-978.jpg","https://i.ibb.co/SwJVXMhY/IMG-20251215-062628-290.jpg"],
+    },
+        { 
+        id: 2, 
+        name: "أقراط بتلات ناعمة", 
+        price: 30, 
+        stock: 0,
+        imgs: ["https://i.ibb.co/kVnbLnMD/IMG-20251215-062629-978.jpg","https://i.ibb.co/SwJVXMhY/IMG-20251215-062628-290.jpg"],
+    },
     
     // يمكنك إضافة حتى 100 منتج بنفس الطريقة هنا...
 ];
