@@ -88,7 +88,7 @@ const products = [
         id: 13, 
         name: "أقراط عصرية بني", 
         price: 30, 
-        stock: 1,
+        stock: 2,
         imgs: ["https://i.ibb.co/FbJwMVkk/IMG-20260427-074943-684.jpg","https://i.ibb.co/GQXwZ4mb/IMG-20260427-074947-011.jpg"],
     },
         { 
